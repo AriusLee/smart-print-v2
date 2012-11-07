@@ -8,7 +8,13 @@
 </head>
 <body>
   <div id="wrapper">
-    <%= yield %>
+    <%= render partial: "partials/header" %>
+    <div id="main_body">
+      <div class="content_wrapper center_wrapper">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render partial: "partials/footer" %>
   </div>
   
   <%= javascript_include_tag "application" %>

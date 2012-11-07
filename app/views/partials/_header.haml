@@ -1,0 +1,45 @@
+%header.clearfix
+  #header_topbar
+    .center_wrapper
+      #logo_link
+      #session_corner.pull_right
+        %table.form_cage
+          %tr
+            %td
+              .label_col Username:
+            %td
+              .field_col
+                %input{type: "text"}
+          %tr
+            %td
+              .label_col Password:
+            %td
+              .field_col
+                %input{type: "password"}
+          %tr
+            %td
+            %td
+              .field_col
+                = link_to "Forgot password?", root_path
+          %tr
+            %td{colspan: "2"}
+              .pull_right
+                %input{type: "submit", value: "Login"}
+          %tr
+            %td{colspan: "2"}
+              .pull_right
+                = link_to "Register", root_path
+  
+      .clearfix
+  .clearfix
+  #header_bottombar
+    #main_nav.guest_nav.center_wrapper
+      = link_to "About us", root_path
+      = link_to "products", root_path
+      = link_to "custom service", root_path
+      = link_to "digital print", root_path
+      = link_to "how we work", root_path
+      = link_to "faq", root_path
+      = link_to "contact us", root_path
+      = link_to "news & promos", root_path
+      .clearfix
