@@ -9,31 +9,31 @@
               .label_col Username:
             %td
               .field_col
-                %input{type: "text"}
+                %input.textbox{type: "text"}
           %tr
             %td
               .label_col Password:
             %td
               .field_col
-                %input{type: "password"}
+                %input.textbox{type: "password"}
           %tr
             %td
             %td
               .field_col
-                = link_to "Forgot password?", root_path
+                = link_to "Forgot password?", root_path, class: "hints"
           %tr
             %td{colspan: "2"}
               .pull_right
-                %input{type: "submit", value: "Login"}
+                %input.session_link{type: "submit", value: "Login"}
           %tr
             %td{colspan: "2"}
               .pull_right
-                = link_to "Register", root_path
+                = link_to "Register", root_path, class: "session_link"
   
       .clearfix
   .clearfix
-  #header_bottombar
-    #main_nav.guest_nav.center_wrapper
+  #header_bottombar.non_login
+    #main_nav.center_wrapper
       = link_to "About us", root_path
       = link_to "products", root_path
       = link_to "custom service", root_path
