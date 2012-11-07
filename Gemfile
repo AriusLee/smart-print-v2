@@ -22,6 +22,13 @@ end
 
 gem 'jquery-rails'
 
+# Gems used for views
+gem 'simple_form', ">= 2.0.1"
+gem 'haml', ">= 3.1.3"
+gem 'rails-backbone'
+gem 'haml_assets', git: "https://github.com/carezone/haml_assets.git"
+gem 'ejs'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

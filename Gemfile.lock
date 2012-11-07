@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/carezone/haml_assets.git
+  revision: a13bebc6a954c0c898d55be7bfe34d228659c584
+  specs:
+    haml_assets (0.2.1)
+      haml
+      tilt
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,9 +45,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    haml (3.1.7)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -69,6 +79,11 @@ GEM
       activesupport (= 3.2.3.rc2)
       bundler (~> 1.0)
       railties (= 3.2.3.rc2)
+    rails-backbone (0.8.0)
+      coffee-script (~> 2.2.0)
+      ejs (~> 1.1.1)
+      jquery-rails (~> 2.1.3)
+      railties (>= 3.1.0)
     railties (3.2.3.rc2)
       actionpack (= 3.2.3.rc2)
       activesupport (= 3.2.3.rc2)
@@ -84,6 +99,9 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    simple_form (2.0.4)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     sprockets (2.1.3)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -104,8 +122,13 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  ejs
+  haml (>= 3.1.3)
+  haml_assets!
   jquery-rails
   rails (= 3.2.3.rc2)
+  rails-backbone
   sass-rails (~> 3.2.3)
+  simple_form (>= 2.0.1)
   sqlite3
   uglifier (>= 1.0.3)
