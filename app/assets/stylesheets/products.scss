@@ -1,0 +1,53 @@
+.products_index {
+  height: 452px;
+  background: url(/assets/product-sprite.png);
+  position: relative;
+  a.product_link {
+    display: block;
+    position: absolute;
+    width: 162px;
+    height: 162px;
+    &.first_row {
+      top: 36px;
+      &.popup {
+        left: 36px;
+      }
+      &.round_stand {
+        left: 215px;
+      }
+      &.tripod_stand {
+        left: 384px;
+      }
+      &.rollup_stand {
+        left: 566px;
+      }
+      &.x_stand {
+        left: 740px;
+      }
+    }
+    &.second_row {
+      top: 224px;
+      &.poster {
+        left: 15px;
+      }
+      &.poster_stand {
+        left: 153px;
+      }
+      &.kiosk {
+        left: 304px;
+      }
+      &.banner {
+        left: 433px;
+      }
+      &.bunting {
+        left: 590px;
+      }
+      &.canvas {
+        left: 740px;
+      }
+    }
+    &:hover {
+      background: url(/assets/frame-product.png) no-repeat;
+    }
+  }
+}
