@@ -29,6 +29,74 @@
   padding: 25px 380px 0 25px;
 }
 
+.info_index.how_we_work {
+  text-align: center;
+  padding-top: 80px;
+  height: 400px;
+  > a {
+    display: inline-block;
+    width: 248px;
+    height: 248px;
+    background: url(/assets/how-we-work.png) no-repeat;
+    position: relative;
+    &.join {
+      background-position: 0 0;
+    }
+    &.order {
+      background-position: -270px 0;
+    }
+    &.pay {
+      background-position: -550px 0;
+    }
+    &:hover {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 248px;
+        height: 248px;
+        background: url(/assets/frame-hww.png) no-repeat;
+      }
+    }
+  }
+}
+
+.how_we_work_index {
+  height: 430px;
+  padding: 25px;
+  position: relative;
+  .hww_nav {
+    float: right;
+    a {
+      width: 50px;
+      height: 40px;
+      background: url(/assets/hww-nav.png) no-repeat;
+      &.join {
+        background-position: 2px 0;
+      }
+      &.order {
+        background-position: -62px 0;
+      }
+      &.pay {
+        background-position: -129px 0;
+      }
+    }
+  }
+  &.how_to_join {
+    background: url(/assets/how-to-join.png) no-repeat;
+    background-position: 25px center;
+  }
+  &.how_to_order {
+    background: url(/assets/how-to-order.png) no-repeat;
+    background-position: 25px center;
+  }
+  &.how_to_pay {
+    background: url(/assets/how-to-pay.png) no-repeat;
+    background-position: 25px center;
+  }
+}
+
 // Contact us
 .contacts_index {
   background: url(/assets/map.png) no-repeat;

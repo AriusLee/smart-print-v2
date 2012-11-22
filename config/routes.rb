@@ -16,6 +16,15 @@ SmartPrintV2::Application.routes.draw do
       get 'contact_us'
       get 'about_us'
       get 'custom_service'
+      get 'how_we_work'
+    end
+  end
+  
+  resources :how_we_work, :path => 'how_we_work', :only => [] do
+    collection do
+      get 'how_to_join'
+      get 'how_to_order'
+      get 'how_to_pay'
     end
   end
 
