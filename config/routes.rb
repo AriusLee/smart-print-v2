@@ -14,6 +14,7 @@ SmartPrintV2::Application.routes.draw do
   resources :infos, :path => '', :only => [] do
     collection do
       get 'contact_us'
+      get 'about_us'
     end
   end
 

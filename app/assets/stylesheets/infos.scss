@@ -1,0 +1,42 @@
+// Contact us
+.contacts_index {
+  background: url(/assets/map.png) no-repeat;
+  width: 940px;
+  height: 480px;
+  position: relative;
+  .contact_info {
+    color: #E9E511;
+    width: 152px;
+    height: 130px;
+    position: absolute;
+    top: 56px;
+    left: 35px;
+    p {
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// About us
+.about_index {
+  background: url(/assets/about.png) no-repeat #666666;
+  background-position: 520px center;
+  height: 455px;
+  padding: 25px 460px 0 25px;
+  position: relative;
+  p {
+    color: #CCCCCC;
+    font-size: 13px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    text-align: justify;
+    b {
+      color: #E9E511;
+    }
+    strong {
+      color: #E9E511;
+      font-size: 15px;
+    }
+  }
+}
