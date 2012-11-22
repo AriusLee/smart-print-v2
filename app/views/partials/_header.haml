@@ -40,6 +40,9 @@
       = link_to "digital print", root_path
       = link_to "how we work", root_path
       = link_to "faq", root_path
-      = link_to "contact us", root_path
+      - if request.fullpath == contacts_path
+        = link_to "contact us", contacts_path, class: "current"
+      - else
+        = link_to "contact us", contacts_path
       = link_to "news & promos", root_path
       .clearfix

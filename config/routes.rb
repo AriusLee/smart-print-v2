@@ -2,6 +2,7 @@ SmartPrintV2::Application.routes.draw do
   root :to => "home#index"
 
   resources :products, :only => ['index']
+  resources :contacts, :only => ['index']
 
   resource :products, :path => 'products', :only => [] do
      collection do

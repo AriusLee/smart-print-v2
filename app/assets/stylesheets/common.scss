@@ -70,6 +70,10 @@ header {
     #main_nav {
       a {
         padding: 10px 12px;
+        &.current, &:hover {
+          background: #E9E511;
+          color: #231F20;
+        }
       }
     } // main_nav
   } // header_bottombar
@@ -92,4 +96,24 @@ footer {
   color: #808080;
   font-size: 11px;
   text-transform: capitalize;
+}
+
+// Contact us
+.contacts_index {
+  background: url(/assets/map.png) no-repeat;
+  width: 940px;
+  height: 480px;
+  position: relative;
+  .contact_info {
+    color: #E9E511;
+    width: 152px;
+    height: 130px;
+    position: absolute;
+    top: 56px;
+    left: 35px;
+    p {
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+  }
 }
