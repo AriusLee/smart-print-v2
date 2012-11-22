@@ -39,7 +39,10 @@
       - else
         = link_to "About us", about_us_infos_path
       = link_to "products", products_path
-      = link_to "custom service", root_path
+      - if request.fullpath == custom_service_infos_path
+        = link_to "Custom service", custom_service_infos_path, class: "current"
+      - else
+        = link_to "Custom service", custom_service_infos_path
       = link_to "digital print", root_path
       = link_to "how we work", root_path
       = link_to "faq", root_path

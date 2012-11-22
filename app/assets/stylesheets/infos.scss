@@ -1,3 +1,34 @@
+.info_index {
+  height: 455px;
+  position: relative;
+  p {
+    color: #CCCCCC;
+    font-size: 13px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    text-align: justify;
+    b {
+      color: #E9E511;
+    }
+    strong {
+      color: #E9E511;
+      font-size: 15px;
+    }
+  }
+}
+
+.info_index.about_us {
+  background: url(/assets/about.png) no-repeat #666666;
+  background-position: 520px 25px;
+  padding: 25px 460px 0 25px;
+}
+
+.info_index.custom_service {
+  background: url(/assets/service.png) no-repeat #666666;
+  background-position: 600px 35px;
+  padding: 25px 380px 0 25px;
+}
+
 // Contact us
 .contacts_index {
   background: url(/assets/map.png) no-repeat;
@@ -14,29 +45,6 @@
     p {
       font-size: 11px;
       margin-bottom: 5px;
-    }
-  }
-}
-
-// About us
-.about_index {
-  background: url(/assets/about.png) no-repeat #666666;
-  background-position: 520px center;
-  height: 455px;
-  padding: 25px 460px 0 25px;
-  position: relative;
-  p {
-    color: #CCCCCC;
-    font-size: 13px;
-    line-height: 1.5em;
-    margin-bottom: 15px;
-    text-align: justify;
-    b {
-      color: #E9E511;
-    }
-    strong {
-      color: #E9E511;
-      font-size: 15px;
     }
   }
 }
