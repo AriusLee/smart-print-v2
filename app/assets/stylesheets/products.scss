@@ -99,6 +99,46 @@
     margin-right: 10px;
     .navigation_row {
       height: 96px;
+      text-align: right;
+      a.products_nav {
+        display: inline-block;
+        width: 34px;
+        height: 32px;
+        background: url(/assets/product-sprite-2.png) no-repeat;
+        &.popup {
+          background-position: -1px 0;
+        }
+        &.round_stand {
+          background-position: -46px 0;
+        }
+        &.tripod_stand {
+          background-position: -86px 0;
+        }
+        &.rollup_stand {
+          background-position: -126px 0;
+        }
+        &.x_stand {
+          background-position: -168px 0;
+        }
+        &.poster {
+          background-position: -208px 0;
+        }
+        &.poster_stand {
+          background-position: -252px 0;
+        }
+        &.kiosk {
+          background-position: -296px 0;
+        }
+        &.banner {
+          background-position: -340px 0;
+        }
+        &.bunting {
+          background-position: -378px 0;
+        }
+        &.canvas {
+          background-position: -418px 0;
+        }
+      }
     }
     .product_gallery {
       .slides_container {
