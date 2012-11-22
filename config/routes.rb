@@ -6,6 +6,7 @@ SmartPrintV2::Application.routes.draw do
   resource :products, :path => 'products', :only => [] do
      collection do
        get 'popup_system'
+       get 'canvas'
      end
    end
 
