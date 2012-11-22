@@ -7,18 +7,7 @@
   
     %a.place_order_link
   .right_col
-    .navigation_row
-      = link_to "", popup_system_products_path, class: "products_nav popup"
-      = link_to "", popup_system_products_path, class: "products_nav round_stand"
-      = link_to "", popup_system_products_path, class: "products_nav tripod_stand"
-      = link_to "", popup_system_products_path, class: "products_nav rollup_stand"
-      = link_to "", popup_system_products_path, class: "products_nav x_stand"
-      = link_to "", popup_system_products_path, class: "products_nav poster"
-      = link_to "", popup_system_products_path, class: "products_nav poster_stand"
-      = link_to "", popup_system_products_path, class: "products_nav kiosk"
-      = link_to "", popup_system_products_path, class: "products_nav banner"
-      = link_to "", popup_system_products_path, class: "products_nav bunting"
-      = link_to "", popup_system_products_path, class: "products_nav canvas"
+    = render partial: "partials/product_nav"
 
     .product_gallery
       .slides_container
