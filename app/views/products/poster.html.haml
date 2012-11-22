@@ -1,0 +1,16 @@
+.products_show
+  .left_col
+    .product_label.poster
+    %h1 Poster
+    %p Advertise your business or event with an enticing poster. You can catch people's attention with high-quality printing. It's easy to get started with our poster solutions. You can also customize your posters from a wide range of sizes, materials and finishes.
+  
+    %a.place_order_link
+  .right_col
+    = render partial: "partials/product_nav"
+
+    .product_gallery
+      .slides_container
+        = image_tag "products/poster-1.png"
+        = image_tag "products/poster-2.png"
+        = image_tag "products/poster-3.png"
+        = image_tag "products/poster-4.png"

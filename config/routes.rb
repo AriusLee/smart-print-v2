@@ -7,6 +7,7 @@ SmartPrintV2::Application.routes.draw do
      collection do
        get 'popup_system'
        get 'canvas'
+       get 'poster'
      end
    end
 
