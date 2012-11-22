@@ -12,4 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require slides
 //= require_tree .
+
+$(document).ready(function() {
+  $(".product_gallery").slides({
+      pagination: true,
+      generatePagination: true,
+      paginationClass: 'gallery_pagination',
+      play: 5000,
+      currentClass: 'current',
+      pause: 0,
+      hoverPause: false,
+      generateNextPrev: false
+  });
+});
