@@ -128,7 +128,7 @@
         background-position: -284px -55px;
       }
       &.products {
-        background-position: -368px -55px;
+        background-position: -409px -55px;
       }
       &.order {
         background-position: -478px -55px;
@@ -209,6 +209,11 @@
     &.payment {
       h3 {
         color: #2DB34A;
+      }
+    }
+    &.products {
+      h3 {
+        color: #273A92;
       }
     }
   }
