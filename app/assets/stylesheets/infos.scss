@@ -125,7 +125,7 @@
         background-position: -159px -55px;
       }
       &.payment {
-        background-position: -249px -55px;
+        background-position: -284px -55px;
       }
       &.products {
         background-position: -368px -55px;
@@ -204,6 +204,11 @@
     &.membership {
       h3 {
         color: #812990;
+      }
+    }
+    &.payment {
+      h3 {
+        color: #2DB34A;
       }
     }
   }

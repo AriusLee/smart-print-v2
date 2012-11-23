@@ -33,6 +33,7 @@ SmartPrintV2::Application.routes.draw do
     collection do
       get 'artwork'
       get 'membership'
+      get 'payment'
     end
   end
 
