@@ -2,14 +2,15 @@
   .topbar
     .faq_label.membership
     .faq_nav.pull_right
-      = link_to "", root_path, class: "artwork"
-      = link_to "", root_path, class: "membership"
-      = link_to "", root_path, class: "payment"
-      = link_to "", root_path, class: "products"
-      = link_to "", root_path, class: "order"
-      = link_to "", root_path, class: "delivery"
-      = link_to "", root_path, class: "account"
+      = link_to "", artwork_faqs_path, class: "artwork"
+      = link_to "", payment_faqs_path, class: "payment"
+      = link_to "", products_faqs_path, class: "products"
+      = link_to "", order_faqs_path, class: "order"
+      = link_to "", delivery_faqs_path, class: "delivery"
+      = link_to "", account_faqs_path, class: "account"
+      
   %h1 membership
+  
   %table.content_row.membership
     %tr
       %td
