@@ -37,6 +37,7 @@ SmartPrintV2::Application.routes.draw do
       get 'products'
       get 'order'
       get 'delivery'
+      get 'account'
     end
   end
 
