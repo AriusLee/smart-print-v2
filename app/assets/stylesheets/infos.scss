@@ -131,7 +131,7 @@
         background-position: -409px -55px;
       }
       &.order {
-        background-position: -478px -55px;
+        background-position: -512px -55px;
       }
       &.delivery {
         background-position: -584px -55px;
@@ -214,6 +214,11 @@
     &.products {
       h3 {
         color: #273A92;
+      }
+    }
+    &.order {
+      h3 {
+        color: #84D5F7;
       }
     }
   }
