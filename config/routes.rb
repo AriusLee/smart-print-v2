@@ -32,6 +32,7 @@ SmartPrintV2::Application.routes.draw do
   resources :faqs, :path => 'faq', :only => [] do
     collection do
       get 'artwork'
+      get 'membership'
     end
   end
 
