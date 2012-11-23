@@ -134,7 +134,8 @@
         background-position: -512px -55px;
       }
       &.delivery {
-        background-position: -584px -55px;
+        width: 58px;
+        background-position: -617px -55px;
       }
       &.account {
         background-position: -688px -55px;
@@ -173,7 +174,7 @@
     }
   }
   h1 {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
   }
   .content_row {
@@ -217,6 +218,16 @@
       }
     }
     &.order {
+      h3 {
+        color: #84D5F7;
+      }
+    }
+    &.delivery {
+      h3 {
+        color: #FAA722;
+      }
+    }
+    &.account {
       h3 {
         color: #84D5F7;
       }
