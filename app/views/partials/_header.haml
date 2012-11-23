@@ -43,7 +43,12 @@
         = link_to "Custom service", custom_service_infos_path, class: "current"
       - else
         = link_to "Custom service", custom_service_infos_path
-      = link_to "digital print", root_path
+      
+      
+      - if request.fullpath == digital_print_infos_path
+        = link_to "digital print", digital_print_infos_path, class: "current"
+      - else
+        = link_to "digital print", digital_print_infos_path
       
       - if request.fullpath == how_we_work_infos_path
         = link_to "how we work", how_we_work_infos_path, class: "current"
