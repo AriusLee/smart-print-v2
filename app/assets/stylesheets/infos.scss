@@ -107,6 +107,102 @@
   }
 }
 
+.faq_show {
+  padding-top: 15px;
+  padding-left: 15px;
+  height: 465px;
+  .topbar {
+    padding-right: 15px;
+    .faq_label {
+      display: inline-block;
+      width: 55px;
+      height: 44px;
+      background: url(/assets/faq-sprite.png) no-repeat;
+      &.artwork {
+        background-position: -40px -55px;
+      }
+      &.membership {
+        background-position: -126px -55px;
+      }
+      &.payment {
+        background-position: -249px -55px;
+      }
+      &.products {
+        background-position: -368px -55px;
+      }
+      &.order {
+        background-position: -478px -55px;
+      }
+      &.delivery {
+        background-position: -584px -55px;
+      }
+      &.account {
+        background-position: -688px -55px;
+      }
+    }
+    .faq_nav {
+      > a {
+        width: 32px;
+        height: 25px;
+        margin-left: 6px;
+        background: url(/assets/faq-nav.png) no-repeat;
+        &.artwork {
+          background-position: 0 0;
+        }
+        &.membership {
+          background-position: -48px 0;
+        }
+        &.payment {
+          background-position: -93px 0;
+        }
+        &.products {
+          width: 24px;
+          background-position: -140px 0;
+        }
+        &.order {
+          background-position: -175px 0;
+        }
+        &.delivery {
+          background-position: -217px 0;
+        }
+        &.account {
+          width: 24px;
+          background-position: -260px 0;
+        }
+      }
+    }
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .content_row {
+    width: 100%;
+    tr td {
+      width: 33%;
+      padding-right: 15px;
+      vertical-align: top;
+      h3 {
+        font-size: 11px;
+      }
+      p, ol {
+        font-size: 11px;
+        text-align: justify;
+        margin: 0 0 10px;
+        padding: 0;
+      }
+      ol {
+        list-style-position: inside;
+        list-style-type: lower-roman;
+      }
+    }
+    &.artwork {
+      h3 {
+        color: #AC7464;
+      }
+    }
+  }
+}
+
 .how_we_work_index {
   height: 430px;
   padding: 25px;

@@ -28,5 +28,11 @@ SmartPrintV2::Application.routes.draw do
       get 'how_to_pay'
     end
   end
+  
+  resources :faqs, :path => 'faq', :only => [] do
+    collection do
+      get 'artwork'
+    end
+  end
 
 end
