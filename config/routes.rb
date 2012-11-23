@@ -17,6 +17,7 @@ SmartPrintV2::Application.routes.draw do
       get 'about_us'
       get 'custom_service'
       get 'how_we_work'
+      get 'faq'
     end
   end
   

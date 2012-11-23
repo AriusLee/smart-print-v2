@@ -55,8 +55,12 @@
         = link_to "how we work", how_we_work_infos_path, class: "current"
       - else
         = link_to "how we work", how_we_work_infos_path
-        
-      = link_to "faq", root_path
+      
+      - if request.fullpath == faq_infos_path
+        = link_to "faq", faq_infos_path, class: "current"
+      - else
+        = link_to "faq", faq_infos_path 
+
       - if request.fullpath == contact_us_infos_path
         = link_to "contact us", contact_us_infos_path, class: "current"
       - else
