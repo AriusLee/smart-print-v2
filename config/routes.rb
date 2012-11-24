@@ -3,6 +3,14 @@ SmartPrintV2::Application.routes.draw do
 
   resources :products, :only => ['index']
 
+  namespace :user do
+    resources :products, :only => [] do
+      collection do
+        get 'popup_system'
+      end
+    end
+  end
+
   resource :products, :path => 'products', :only => [] do
     collection do
       get 'popup_system'
