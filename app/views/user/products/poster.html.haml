@@ -4,37 +4,39 @@
   .user_product_show
     %form
       %table.product_order_table
-        %tr
-          %td.label_col weight
-          %td.field_col
-            .field_bar 3 kg
 
         %tr
-          %td.label_col printing
+          %td.label_col size
           %td.field_col
             .field_bar
-              %input{type: "radio", name: "product_printing", value: "yes"}
-              %label{for: "product_printing"} Yes
-              %input{type: "radio", name: "product_printing", value: "no"}
-              %label{for: "product_printing"} No
-
-        %tr
-          %td.label_col print size
-          %td.field_col
-            .field_bar.theme_b 80cm[W] x 200cm[H]
+              %input{type: "text", value: "A3 / 297mmx420mm"}
             
         %tr
           %td.label_col finishing
           %td.field_col
             .field_bar
-              %input{type: "radio", name: "product_finishing", value: "matte"}
-              %label{for: "product_printing"} Matte
-              %input{type: "radio", name: "product_finishing", value: "gloss"}
-              %label{for: "product_printing"} Gloss
-              %input{type: "radio", name: "product_finishing", value: "pvc_pipes"}
-              %label{for: "product_printing"} PVC Pipes
-              %input{type: "radio", name: "product_finishing", value: "foam_board"}
-              %label{for: "product_printing"} Foam Board
+              %input{type: "radio", name: "poster_finishing", value: "matte"}
+              %label{for: "poster_finishing"} Matte
+              %input{type: "radio", name: "poster_finishing", value: "gloss"}
+              %label{for: "poster_finishing"} Gloss
+              
+        %tr
+          %td.label_col mounting
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "poster_mounting", value: "foam_board"}
+              %label{for: "poster_mounting"} Foam Board
+              %input{type: "radio", name: "poster_mounting", value: "poly_board"}
+              %label{for: "poster_mounting"} Poly Board
+              
+        %tr
+          %td.label_col framing
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "poster_framing", value: "silver"}
+              %label{for: "poster_framing"} Silver Frame
+              %input{type: "radio", name: "poster_framing", value: "no"}
+              %label{for: "poster_framing"} No Frame
               
         %tr
           %td.label_col quantity
@@ -80,4 +82,3 @@
       .corner_links
         = link_to "", root_path, class: "view_more"
         = link_to "", root_path, class: "place_order"
-              

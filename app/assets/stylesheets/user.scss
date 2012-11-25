@@ -86,12 +86,11 @@
       }
     }
     .product_order_table {
-      width: 100%;
       font-size: 12px;
       tr {
         td {
           &.label_col {
-            width: 90px;
+            width: 95px;
             color: #666;
             text-transform: uppercase;
             &.top {
