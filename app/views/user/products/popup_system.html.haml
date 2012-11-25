@@ -5,9 +5,23 @@
     %form
       %table.product_order_table
         %tr
+          %td.label_col type
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "popup_type", value: "curve"}
+              %label{for: "popup_type"} Curve
+              %input{type: "radio", name: "popup_type", value: "flat"}
+              %label{for: "popup_type"} Flat
+
+        %tr
+          %td.label_col size
+          %td.field_col
+            .field_bar.theme_b Front - 75cm[W]x228.46[H] x 3pcs | Side - 65cm[W]x228.46[H] x 2pcs
+        
+        %tr
           %td.label_col weight
           %td.field_col
-            .field_bar 3 kg
+            .field_bar.theme_b 30 kg
 
         %tr
           %td.label_col printing
@@ -17,25 +31,7 @@
               %label{for: "product_printing"} Yes
               %input{type: "radio", name: "product_printing", value: "no"}
               %label{for: "product_printing"} No
-
-        %tr
-          %td.label_col print size
-          %td.field_col
-            .field_bar.theme_b 80cm[W] x 200cm[H]
-            
-        %tr
-          %td.label_col finishing
-          %td.field_col
-            .field_bar
-              %input{type: "radio", name: "product_finishing", value: "matte"}
-              %label{for: "product_printing"} Matte
-              %input{type: "radio", name: "product_finishing", value: "gloss"}
-              %label{for: "product_printing"} Gloss
-              %input{type: "radio", name: "product_finishing", value: "pvc_pipes"}
-              %label{for: "product_printing"} PVC Pipes
-              %input{type: "radio", name: "product_finishing", value: "foam_board"}
-              %label{for: "product_printing"} Foam Board
-              
+  
         %tr
           %td.label_col quantity
           %td.field_col
@@ -68,14 +64,43 @@
               %input{type: "number"}
               
         %tr
-          %td.label_col.top remark
+          %td.label_col.top extra order
           %td.field_col
-            %textarea{placeholder: "Please note if there's any specification or other requirement."}
+            .field_bar
+              %ul.extra_order
+                %li
+                  %input{type: "checkbox"}
+                  Magnetic Bar (Curve) <i>[x3]</i>
+                %li
+                  %input{type: "checkbox"}
+                  Magnetic Bar (Flat) <i>[x3]</i>
+                %li
+                  %input{type: "checkbox"}
+                  Hanger (Curve) <i>[x3]</i>
+                %li
+                  %input{type: "checkbox"}
+                  Hanger (Flat) <i>[x3]</i>
+                %li.short
+                  %input{type: "checkbox"}
+                  Spotlight <i>[x1]</i>
+                %li.short
+                  %input{type: "checkbox"}
+                  Case <i>[x1]</i>
+                %li.medium
+                  %input{type: "checkbox"}
+                  Magnetic Roll 100m <i>[x1]</i>
+              .price_bar
+                <b>extra order price</b>
+                %input{type: "number"}
       
       .secondary_field_col
         .upload_bar
           .upload_indicator Upload your printing file. Max file size is 200MB.
           %input{type: "file", class: "file_upload"}
+      
+      .popup_remark
+        .label_row Remark
+        %textarea{placeholder: "Please note if there's any specification or other requirement."}
       
       .corner_links
         = link_to "", root_path, class: "view_more"

@@ -50,7 +50,7 @@
   .user_product_show {
     border: 1px solid #666;
     padding: 25px 15px;
-    height: 320px;
+    height: 330px;
     position: relative;
     .corner_links {
       position: absolute;
@@ -68,6 +68,22 @@
           margin-left: 11px;
           background: url(/assets/place-order-2.png) no-repeat;
         }
+      }
+    }
+    .popup_remark {
+      font-size: 12px;
+      width: 180px;
+      position: absolute;
+      bottom: 45px;
+      right: 145px;
+      .label_row {
+        color: #666;
+        text-transform: uppercase;
+      }
+      textarea {
+        height: 87px;
+        border: 1px solid #666;
+        resize: none;
       }
     }
     .secondary_field_col {
@@ -112,6 +128,26 @@
               font-family: arial, sans-serif;
               background: #666;
               color: #fff;
+              .price_bar {
+                text-align: right;
+                padding: 15px 0 2px;
+                b {
+                  text-transform: uppercase;
+                }
+              }
+              .extra_order {
+                li {
+                  display: inline-block;
+                  width: 50%;
+                  margin-right: -4px;
+                  &.short {
+                    width: 25%;
+                  }
+                  &.medium {
+                    width: 50%;
+                  }
+                }
+              }
               input.short {
                 width: 60px;
               }
