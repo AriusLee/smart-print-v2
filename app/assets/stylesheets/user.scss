@@ -1,0 +1,56 @@
+.user_product_index {
+  padding: 15px;
+  height: 450px;
+  .order_nav {
+    text-align: justify;
+    a {
+      display: inline-block;
+      border: 1px solid transparent;
+      background: url(/assets/order-nav.png) no-repeat;
+      width: 77px;
+      height: 74px;
+      &:hover, &.current {
+        border: 1px solid #666;
+      }
+      &.popup {
+        background-position: 1px 2px;
+      }
+      &.round_stand {
+        background-position: 2px -742px;
+      }
+      &.tripod_stand {
+        background-position: 1px -1061px;
+      }
+      &.rollup_stand {
+        background-position: 1px -955px;
+      }
+      &.x_stand {
+        background-position: 2px -849px;
+      }
+      &.poster {
+        background-position: 1px -329px;
+      }
+      &.poster_stand {
+        background-position: 2px -424px;
+      }
+      &.kiosk {
+        background-position: 1px -531px;
+      }
+      &.banner {
+        background-position: 1px -227px;
+      }
+      &.bunting {
+        background-position: 1px -637px;
+      }
+      &.canvas {
+        background-position: 1px -120px;
+      }
+    }
+  }
+  .user_product_show {
+    border: 1px solid #666;
+    padding: 25px 15px;
+    height: 320px;
+    position: relative;
+  }
+}
