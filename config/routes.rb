@@ -8,6 +8,7 @@ SmartPrintV2::Application.routes.draw do
       collection do
         get 'popup_system'
         get 'round_stand'
+        get 'rollup_stand'
       end
     end
   end
