@@ -112,6 +112,9 @@
               font-family: arial, sans-serif;
               background: #666;
               color: #fff;
+              input.short {
+                width: 60px;
+              }
               &.theme_b {
                 color: #000 !important;
               }
