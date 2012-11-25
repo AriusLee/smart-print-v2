@@ -14,7 +14,11 @@
     = link_to "", rollup_stand_user_products_path, class: "rollup_stand current"
   - else
     = link_to "", rollup_stand_user_products_path, class: "rollup_stand"
-  = link_to "", popup_system_user_products_path, class: "x_stand"
+  
+  - if request.fullpath == x_stand_user_products_path
+    = link_to "", x_stand_user_products_path, class: "x_stand current"
+  - else
+    = link_to "", x_stand_user_products_path, class: "x_stand"
   
   - if request.fullpath == poster_user_products_path
     = link_to "", poster_user_products_path, class: "poster current"

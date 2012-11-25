@@ -1,0 +1,90 @@
+.user_product_index
+  = render partial: "partials/order_nav"
+  
+  .user_product_show
+    %form
+      %table.product_order_table
+
+        %tr
+          %td.label_col type
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "x_stand_type", value: "mini"}
+              %label{for: "x_stand_type"} Mini X Stand
+              %input{type: "radio", name: "x_stand_type", value: "5ft"}
+              %label{for: "x_stand_type"} 5ft X Stand
+              %input{type: "radio", name: "x_stand_type", value: "adjustable"}
+              %label{for: "x_stand_type"} Adjustable X Stand
+              
+        %tr
+          %td.label_col weight
+          %td.field_col
+            .field_bar -
+              
+        %tr
+          %td.label_col printing
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "x_stand_printing", value: "yes"}
+              %label{for: "x_stand_printing"} Yes
+              %input{type: "radio", name: "x_stand_printing", value: "no"}
+              %label{for: "x_stand_printing"} No
+
+        %tr
+          %td.label_col print size
+          %td.field_col
+            .field_bar -
+
+        %tr
+          %td.label_col finishing
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "x_stand_finishing", value: "matte"}
+              %label{for: "x_stand_finishing"} Matte
+              %input{type: "radio", name: "x_stand_finishing", value: "gloss"}
+              %label{for: "x_stand_finishing"} Gloss
+        
+        %tr
+          %td.label_col quantity
+          %td.field_col
+            .field_bar
+              %input{type: "number"}
+              
+        %tr
+          %td.label_col duration
+          %td.field_col
+            .field_bar.theme_b.short 1 working day
+            .field_bar.theme_c.medium
+              %input{type: "checkbox", name: "product_urgent"}
+              %label{for: "product_urgent"} <b>Urgent (1 hour)</b> <i>Max quantity 1-30 units only.</i>
+              
+        %tr
+          %td.label_col delivery
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "product_finishing", value: "klang_valley"}
+              %label{for: "product_printing"} Klang Valley
+              %input{type: "radio", name: "product_finishing", value: "other"}
+              %label{for: "product_printing"} Area Out Of Klang Valley
+              %input{type: "radio", name: "product_finishing", value: "no"}
+              %label{for: "product_printing"} No
+              
+        %tr
+          %td.label_col Total price
+          %td.field_col
+            .field_bar
+              %input{type: "number"}
+              
+        %tr
+          %td.label_col.top remark
+          %td.field_col
+            %textarea{placeholder: "Please note if there's any specification or other requirement."}
+      
+      .secondary_field_col
+        .upload_bar
+          .upload_indicator Upload your printing file. Max file size is 200MB.
+          %input{type: "file", class: "file_upload"}
+
+      .corner_links
+        = link_to "", root_path, class: "view_more"
+        = link_to "", root_path, class: "place_order"
