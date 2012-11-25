@@ -13,6 +13,7 @@ SmartPrintV2::Application.routes.draw do
         get 'poster_stand'
         get 'tripod_stand'
         get 'x_stand'
+        get 'kiosk'
       end
     end
   end

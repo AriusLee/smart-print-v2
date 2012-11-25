@@ -1,0 +1,75 @@
+.user_product_index
+  = render partial: "partials/order_nav"
+  
+  .user_product_show
+    %form
+      %table.product_order_table
+
+        %tr
+          %td.label_col printing
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "kiosk_printing", value: "yes"}
+              %label{for: "kiosk_printing"} Yes
+              %input{type: "radio", name: "kiosk_printing", value: "no"}
+              %label{for: "kiosk_printing"} No
+
+        %tr
+          %td.label_col print size
+          %td.field_col
+            .field_bar.theme_b Front - 78.5cm[W]x80.5cm x 1pc | Side - 38.5cm[W]x80.5cm[H] x 2pcs
+        
+        %tr
+          %td.label_col header size
+          %td.field_col
+            .field_bar.theme_b 73.5cm[W]x23.5cm[H] x 1pc
+              
+        %tr
+          %td.label_col weight
+          %td.field_col
+            .field_bar.theme_b 8 kg
+
+        %tr
+          %td.label_col quantity
+          %td.field_col
+            .field_bar
+              %input{type: "number"}
+              
+        %tr
+          %td.label_col duration
+          %td.field_col
+            .field_bar.short -
+            .field_bar.theme_c.medium
+              %input{type: "checkbox", name: "product_urgent"}
+              %label{for: "product_urgent"} <b>Urgent (1 hour)</b> <i>Max quantity 1-30 units only.</i>
+              
+        %tr
+          %td.label_col delivery
+          %td.field_col
+            .field_bar
+              %input{type: "radio", name: "product_finishing", value: "klang_valley"}
+              %label{for: "product_printing"} Klang Valley
+              %input{type: "radio", name: "product_finishing", value: "other"}
+              %label{for: "product_printing"} Area Out Of Klang Valley
+              %input{type: "radio", name: "product_finishing", value: "no"}
+              %label{for: "product_printing"} No
+              
+        %tr
+          %td.label_col Total price
+          %td.field_col
+            .field_bar
+              %input{type: "number"}
+              
+        %tr
+          %td.label_col.top remark
+          %td.field_col
+            %textarea{placeholder: "Please note if there's any specification or other requirement."}
+      
+      .secondary_field_col
+        .upload_bar
+          .upload_indicator Upload your printing file. Max file size is 200MB.
+          %input{type: "file", class: "file_upload"}
+
+      .corner_links
+        = link_to "", root_path, class: "view_more"
+        = link_to "", root_path, class: "place_order"
