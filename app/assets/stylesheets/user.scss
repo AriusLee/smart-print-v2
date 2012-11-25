@@ -52,5 +52,86 @@
     padding: 25px 15px;
     height: 320px;
     position: relative;
+    .corner_links {
+      position: absolute;
+      bottom: 15px;
+      right: 25px;
+      a {
+        display: inline-block;
+        width: 52px;
+        height: 56px;
+        &.view_more {
+          background: url(/assets/view-more.png) no-repeat;
+        }
+        &.place_order {
+          width: 58px;
+          margin-left: 11px;
+          background: url(/assets/place-order-2.png) no-repeat;
+        }
+      }
+    }
+    .secondary_field_col {
+      font-size: 12px;
+      width: 300px;
+      position: absolute;
+      top: 51px;
+      right: 25px;
+      .upload_indicator {
+        padding: 4px;
+        font-family: arial, sans-serif;
+        border: 1px solid #666;
+        color: #666;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+    }
+    .product_order_table {
+      width: 100%;
+      font-size: 12px;
+      tr {
+        td {
+          &.label_col {
+            width: 90px;
+            color: #666;
+            text-transform: uppercase;
+            &.top {
+              vertical-align: top;
+              padding-top: 5px;
+            }
+          }
+          &.field_col {
+            width: 465px;
+            textarea {
+              width: 452px;
+              height: 80px;
+              border: 1px solid #666;
+              resize: none;
+            }
+            .field_bar {
+              width: 450px;
+              padding: 4px;
+              font-family: arial, sans-serif;
+              background: #666;
+              color: #fff;
+              &.theme_b {
+                color: #000 !important;
+              }
+              &.theme_c {
+                background: #fff;
+                color: #666;
+              }
+              &.short {
+                width: 120px;
+                display: inline-block;
+              }
+              &.medium {
+                width: 320px;
+                display: inline-block;
+              }
+            }
+          }
+        } // td
+      } // tr
+    } // product_order_table
   }
 }
