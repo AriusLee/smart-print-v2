@@ -10,6 +10,7 @@ SmartPrintV2::Application.routes.draw do
         get 'round_stand'
         get 'rollup_stand'
         get 'poster'
+        get 'poster_stand'
       end
     end
   end

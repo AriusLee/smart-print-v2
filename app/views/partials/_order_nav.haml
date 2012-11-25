@@ -15,8 +15,12 @@
     = link_to "", poster_user_products_path, class: "poster current"
   - else
     = link_to "", poster_user_products_path, class: "poster"
-    
-  = link_to "", popup_system_user_products_path, class: "poster_stand"
+  
+  - if request.fullpath == poster_stand_user_products_path
+    = link_to "", poster_stand_user_products_path, class: "poster_stand current"
+  - else
+    = link_to "", poster_stand_user_products_path, class: "poster_stand"
+
   = link_to "", popup_system_user_products_path, class: "kiosk"
   = link_to "", popup_system_user_products_path, class: "banner"
   = link_to "", popup_system_user_products_path, class: "bunting"
