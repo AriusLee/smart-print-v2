@@ -14,6 +14,9 @@ SmartPrintV2::Application.routes.draw do
         get 'tripod_stand'
         get 'x_stand'
         get 'kiosk'
+        get 'banner'
+        get 'bunting'
+        get 'canvas'
       end
     end
   end

@@ -34,7 +34,18 @@
     = link_to "", kiosk_user_products_path, class: "kiosk current"
   - else
     = link_to "", kiosk_user_products_path, class: "kiosk"
-
-  = link_to "", popup_system_user_products_path, class: "banner"
-  = link_to "", popup_system_user_products_path, class: "bunting"
-  = link_to "", popup_system_user_products_path, class: "canvas"
+  
+  - if request.fullpath == banner_user_products_path
+    = link_to "", banner_user_products_path, class: "banner current"
+  - else
+    = link_to "", banner_user_products_path, class: "banner"
+  
+  - if request.fullpath == bunting_user_products_path
+    = link_to "", bunting_user_products_path, class: "bunting current"
+  - else
+    = link_to "", bunting_user_products_path, class: "bunting"
+  
+  - if request.fullpath == canvas_user_products_path
+    = link_to "", canvas_user_products_path, class: "canvas current"
+  - else
+    = link_to "", canvas_user_products_path, class: "canvas"
